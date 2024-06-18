@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --background-color: white;
+    --foreground-color: #f4f5f7;
+    --header-bg: rgb(17, 205, 239);
+    --primary-text: rgb(52, 71, 103);
+    --secondary-text: rgb(103, 116, 142);
+}
+
+[data-theme="dark"] {
+    --background-color: #101c44;
+    --header-bg: #051139;
+    --foreground-color: #051139;
+    --primary-text: white;
+    --secondary-text: #d0d0d8;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 2.5fr 9.5fr;
+}
+
+@media screen and (max-width: 1300px) {
+    .App{
+        grid-template-columns: 1fr;
+    }
+}
